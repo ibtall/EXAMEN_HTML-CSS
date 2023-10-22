@@ -1,0 +1,374 @@
+* {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/*--------------------------------------------------NAV BAR---------------------------------------------------------------------*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 5px 15px;
+  border: 1px solid #000;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+nav li {
+  margin: 0 35px;
+}
+li a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 15px;
+}
+li.active a {
+  background-color: transparent;
+  color: blue;
+  border-radius: 10px;
+}
+
+div i {
+  font-size: 24px;
+  color: black;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+div i:hover {
+  transform: rotate(45deg);
+  transition: transform 0.3s;
+}
+
+/*-----------------------------------------------FOOTER------------------------------------------------------------------------*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding-top: 20px;
+  width: 100%;
+}
+.column {
+  flex: 1;
+  padding: 20px;
+}
+.column img {
+  max-width: 100%;
+  height: auto;
+}
+.bullet-list {
+  list-style-type: disc;
+  padding: 0;
+  line-height: 1.5;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.social-icons {
+  display: flex;
+}
+.social-icons li {
+  margin-right: 10px;
+}
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+.copyright {
+  text-align: center;
+  color: black;
+  padding: 10px;
+}
+
+/*---------------------------------------------------CONTENT de Home--------------------------------------------------------------------*/
+
+.banner {
+  height: 295px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 0 30px;
+}
+main {
+  border: 1px solid black;
+  margin: 10px 25px;
+  margin-bottom: 10px;
+}
+.main1 {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  justify-content: center;
+  gap: 100px;
+  padding: 0 100px;
+}
+.card {
+  background-color: transparent;
+  margin-top: 40px;
+}
+.card-text {
+  background-color: #fff;
+}
+.card-text p {
+  line-height: 1.5;
+}
+.two {
+  word-spacing: 10px;
+}
+.card img {
+  max-width: 350px;
+  height: auto;
+  margin-top: 0;
+  border-radius: 10px;
+}
+.image-container {
+  position: relative;
+}
+.caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(240, 147, 61);
+  color: #fff;
+  padding: 10px;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 40px;
+}
+.caption p {
+  color: white;
+  font-weight: 500;
+  padding-bottom: 900px;
+  margin-top: 0px;
+}
+
+.sec1 h4 {
+  color: rgb(240, 147, 61);
+  font-size: larger;
+}
+.sec2 {
+  text-align: center;
+  padding-top: 25px;
+}
+.sec2 h2 {
+  text-align: center;
+  padding-left: 170px;
+  padding-bottom: 20px;
+}
+.text-blabla {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-blabla img {
+  width: 600px;
+  height: auto;
+  margin-right: 20px;
+  padding-bottom: 30px;
+}
+.text-blabla-content {
+  position: relative;
+}
+.text-blabla h4 {
+  position: absolute;
+  top: -60px;
+  padding-left: 20px;
+}
+.text-blabla p {
+  max-width: 400px;
+  text-align: left;
+  margin-top: -20px;
+  padding-left: 20px;
+}
+.text-blabla h6 {
+  text-align: left;
+  margin-top: 100px;
+  padding-left: 20px;
+}
+/*---------------------------------------------------Style Propre à appartments--------------------------------------------------------------------*/
+
+.card-contain {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 60px;
+  padding-bottom: 60px;
+  gap: 10px;
+}
+
+.card {
+  background-color: transparent;
+}
+
+.card-text {
+  padding: 0px;
+}
+
+/*---------------------------------------------------Style Propre à categories--------------------------------------------------------------------*/
+.big-box {
+  border: 1px solid black;
+  margin: 30px 25px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.box1 {
+  border: 1px solid black;
+  margin: 30px 25px;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.box2 {
+  border: 1px solid black;
+  margin: 30px 25px;
+  margin-bottom: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.box1 img {
+  display: inline;
+  justify-content: center;
+  height: 250px;
+  width: auto;
+  margin: 40px 40px;
+}
+.box2 img {
+  display: inline;
+  justify-content: center;
+  height: 250px;
+  width: auto;
+  margin: 40px 40px;
+}
+
+/*---------------------------------------------------Style Propre à ajouter--------------------------------------------------------------------*/
+
+form {
+  margin: 20px;
+  padding-left: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  max-width: 1000px;
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+input[type="file"] {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.row label {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.row input {
+  width: 400px;
+}
+
+.input-group label {
+  flex: 1;
+  margin-right: 10px;
+}
+.form-title {
+  text-align: center;
+  height: 90px;
+  margin: auto;
+  background-color: lightgray;
+  max-width: 1000px;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+input[type="submit"] {
+  background-color: green;
+  max-width: 300px;
+  height: 50px;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 700px;
+}
+.form-title h3 {
+  margin-top: 30px;
+  font-weight: bolder;
+  color: black;
+  font-size: 40px;
+}
+
+.add-form {
+  border: 1px solid black;
+  margin: 30px 25px;
+  margin-bottom: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+/*---------------------------------------------------Style Propre à détaille--------------------------------------------------------------------*/
+
+.image-grid {
+  display: flex;
+  margin-top: 60px;
+  padding-top: 40px;
+}
+
+.left-image {
+  flex: 1;
+}
+
+.image-group {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.image {
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+}
